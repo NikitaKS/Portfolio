@@ -1,0 +1,62 @@
+.header {
+    background-color: cadetblue;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.menu {
+    background-color: aqua;
+}
+
+.headerWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 8fr;
+}
+
+.HeaderLogo {
+    display: flex;
+}
+
+.logo_img {
+    height: 50px;
+}
+
+.MenuWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.MenuWrapper .Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.MenuWrapper .Menu li + li {
+    margin-left: 20px;
+}
+
+.MenuWrapper .Menu a {
+    text-decoration: none;
+}
+
+.MenuButton {
+
+}
+
+.MenuButtonIn {
+    border: 1px solid #FFC576;
+    color: #FFC576;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 2px;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+}
