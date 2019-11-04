@@ -1,3 +1,86 @@
-.content{
-    background-color: cadetblue;
+.content {
+    background-color: #1f2235;
+}
+
+.contentWrapper {
+
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.text {
+
+}
+
+.photo {
+
+}
+
+.AboutMe {
+    color: #f4f4f4;
+    padding-bottom: 60px;
+}
+
+.AboutMeWrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #313552;
+}
+.AboutMeNav{
+
+}
+.NavMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavMenu li {
+    padding: 17px 40px 17px 40px;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0px 0px 0px 0px;
+}
+.AboutMeDesc{
+
+}
+.ProjectsWrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    padding-bottom: 60px;
+}
+.ProjectsTitle{
+    grid-column: 1/4;
+    background-color: aqua;
+
+}
+.Project{
+    border-radius: 7px 7px 7px 7px;
+    background-color: rosybrown;
+    padding: 30px 0;
+}
+.SocialWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding-bottom: 60px;
+}
+.SocialTitle{
+    background-color: aqua;
+    grid-column: 1/4;
+}
+.SocialItemWrapper div{
+    background-color: #2c304a;
+    padding: 30px 30px 30px 30px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgba(255,197,118,0.75);
+    border-radius: 7px 7px 7px 7px;
 }
