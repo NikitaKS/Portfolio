@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './Content.module.css';
 
-function SocialItem () {
+function SocialItem (props) {
     return (
         <div className={s.SocialItemWrapper}>
-            <div>1231323 <br/> asdasdsadas</div>
+            <div className={s.SocialItemTitle}>{props.title}</div>
+            <div className={s.SocialItemDesc}>{props.desc}</div>
         </div>
     );
 }

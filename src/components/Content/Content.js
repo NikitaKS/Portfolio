@@ -6,6 +6,12 @@ import Projects from "./Projects";
 import Social from "./Social";
 
 function Content() {
+    let social = [
+        {title: 'LinedIn', desc: 'Professional social profile'},
+        {title: 'Instagram', desc: 'Image base social communications'},
+        {title: 'VK', desc: 'Social profile'},
+        {title: 'EMail', desc: 'asd@asd.com'},
+    ];
     return (
         <div className={s.content}>
             <div className="container">
@@ -13,7 +19,7 @@ function Content() {
                     <HeaderContent/>
                     <AboutMe/>
                     <Projects/>
-                    <Social/>
+                    <Social social={social}/>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import 'reset-css';
 import './App.css';
+import './fonts/fonts.css';
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
 import Footer from "./components/Footer/Footer";
