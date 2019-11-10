@@ -70,12 +70,6 @@
     padding-bottom: 60px;
 }
 
-.ProjectsTitle {
-    grid-column: 1/4;
-    background-color: aqua;
-
-}
-
 .Project {
     border-radius: 7px 7px 7px 7px;
     background-color: rosybrown;
@@ -89,7 +83,7 @@
     padding-bottom: 50px;
 }
 
-.SocialTitle {
+.Title {
     grid-column: 1/4;
     font-family: 'hk_groteskregular', sans-serif;
     font-size: 40px;
