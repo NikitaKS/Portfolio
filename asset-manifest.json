@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.162e5fea.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0635b383.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0635b383.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.b0957d76.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b0957d76.js.map",
+    "static/css/2.117ce29f.chunk.css": "/Portfolio/static/css/2.117ce29f.chunk.css",
+    "static/js/2.b1235074.chunk.js": "/Portfolio/static/js/2.b1235074.chunk.js",
+    "static/js/2.b1235074.chunk.js.map": "/Portfolio/static/js/2.b1235074.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.b25a0a10ebb4e385a53e6befe09a4f87.js": "/Portfolio/precache-manifest.b25a0a10ebb4e385a53e6befe09a4f87.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/2.117ce29f.chunk.css.map": "/Portfolio/static/css/2.117ce29f.chunk.css.map",
+    "static/css/main.162e5fea.chunk.css.map": "/Portfolio/static/css/main.162e5fea.chunk.css.map",
+    "static/media/fonts.css": "/Portfolio/static/media/hkgrotesk-semibold-webfont.e9353041.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0957d76.js",
+    "static/css/2.117ce29f.chunk.css",
+    "static/js/2.b1235074.chunk.js",
+    "static/css/main.162e5fea.chunk.css",
+    "static/js/main.0635b383.chunk.js"
+  ]
+}
