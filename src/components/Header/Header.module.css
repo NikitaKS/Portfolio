@@ -81,16 +81,3 @@
 
 }
 
-.MenuButtonIn {
-    border: 1px solid #FFC576;
-    color: #FFC576;
-    background: transparent;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 10px 30px;
-    border-radius: 2px;
-    font-size: 14px;
-    display: inline-block;
-    text-decoration: none;
-    margin-left: 20px;
-}

@@ -33,3 +33,21 @@ body {
     width: 100%;
     padding: 0 15px;
 }
+.MenuButtonIn {
+    border: 1px solid #FFC576;
+    color: #FFC576;
+    font-family: 'hk_groteskmedium', sans-serif;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 2px;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.2s;
+}
+.MenuButtonIn:hover{
+    background-color: #FFC576;
+    color: #1F2235;
+}

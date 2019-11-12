@@ -16,7 +16,7 @@ function Header() {
                             <li><a href="#">Contact</a></li>
                         </ul>
                         <div className={s.MenuButton}>
-                            <a className={s.MenuButtonIn} href="#">Let`s Chat</a>
+                            <a className={"MenuButtonIn"} href="#">Let`s Chat</a>
                         </div>
                     </div>
                 </div>

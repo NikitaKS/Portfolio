@@ -8,9 +8,9 @@ function Footer() {
             <div className='container'>
                 <div className={s.footerWrapper}>
                     <HeaderLogo/>
-                    <div className={s.footerText}>Let`s Chat</div>
+                    <div className={s.footerText}></div>
                     <div className={s.FooterButton}>
-                        <a className={s.FooterButtonIn} href="#">Let`s Chat</a>
+                        <a className={"MenuButtonIn"}  href="#">Let`s Chat</a>
                     </div>
                 </div>
             </div>

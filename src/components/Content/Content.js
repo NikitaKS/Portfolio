@@ -9,8 +9,7 @@ function Content() {
     let social = [
         {title: 'LinedIn', desc: 'Professional social profile'},
         {title: 'Instagram', desc: 'Image base social communications'},
-        {title: 'VK', desc: 'Social profile'},
-        {title: 'EMail', desc: 'asd@asd.com'},
+        {title: 'Telegramm', desc: '@asdsdsd'},
     ];
     return (
         <div className={s.content}>
