@@ -1,9 +1,5 @@
 .header {
-    background-color: cadetblue;
-}
-
-.logo-img {
-    height: 50px;
+    background-color: #1f2336;
 }
 
 .menu {
@@ -14,16 +10,24 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 4fr 8fr;
+    align-items: center;
 }
 
 .HeaderLogo {
     display: flex;
+    align-items: center;
+    padding: 15px 0;
 }
 
 .logo_img {
-    height: 50px;
+    height: 70px;
 }
-
+.logoDesc{
+    font-family: 'hk_grotesbold', sans-serif;
+    font-size: 20px;
+    color: #f4f4f4;
+    margin-left: 10px;
+}
 .MenuWrapper {
     display: flex;
     justify-content: flex-end;
@@ -36,14 +40,43 @@
     align-items: center;
 }
 
+.MenuWrapper .Menu li {
+    padding: 15px 0;
+    position: relative;
+}
+
 .MenuWrapper .Menu li + li {
     margin-left: 20px;
 }
 
 .MenuWrapper .Menu a {
+    font-family: 'hk_grotesksemiboldbold', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    color: #f4f4f4;
+    cursor: pointer;
+    transition: all 0.2s;
     text-decoration: none;
 }
+.MenuWrapper .Menu a:hover{
+    color: #FFC576;
+}
 
+.MenuWrapper .Menu a:before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 2px solid #FFC576;
+    transition: 0.3s;
+}
+.MenuWrapper .Menu a:hover:before{
+    opacity: 1;
+    width: 100%;
+}
 .MenuButton {
 
 }
@@ -59,4 +92,5 @@
     font-size: 14px;
     display: inline-block;
     text-decoration: none;
+    margin-left: 20px;
 }

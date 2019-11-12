@@ -11,9 +11,9 @@ function Header() {
                     <div className={s.MenuWrapper}>
                         <ul className={s.Menu}>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Price</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                         <div className={s.MenuButton}>
                             <a className={s.MenuButtonIn} href="#">Let`s Chat</a>
