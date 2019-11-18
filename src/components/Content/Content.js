@@ -4,12 +4,16 @@ import HeaderContent from "./HeaderContent";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Social from "./Social";
+import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import {faTelegramPlane} from '@fortawesome/free-brands-svg-icons'
+import {faInstagram} from '@fortawesome/free-brands-svg-icons'
+
 
 function Content() {
     let social = [
-        {title: 'LinedIn', desc: 'Professional social profile'},
-        {title: 'Instagram', desc: 'Image base social communications'},
-        {title: 'Telegramm', desc: '@asdsdsd'},
+        {title: 'LinedIn', desc: 'Professional social profile', icon: faLinkedinIn},
+        {title: 'Instagram', desc: 'Image base social communications', icon: faInstagram},
+        {title: 'Telegramm', desc: '@asdsdsd', icon: faTelegramPlane},
     ];
     return (
         <div className={s.content}>
