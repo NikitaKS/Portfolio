@@ -6,8 +6,8 @@ function Projects() {
     return (
         <div>
             <div className="container">
+                <div className={s.Title}>Projects</div>
                 <div className={s.ProjectsWrapper}>
-                    <div className={s.Title}>Projects</div>
                     <Project/>
                     <Project/>
                     <Project/>

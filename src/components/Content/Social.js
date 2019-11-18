@@ -9,8 +9,8 @@ function Social(props) {
     return (
         <div>
             <div className="container">
+                <div className={s.Title}>Let`s Be Friends?</div>
                 <div className={s.SocialWrapper}>
-                    <div className={s.Title}>Let`s Be Friends?</div>
                     {socialitem}
                 </div>
             </div>

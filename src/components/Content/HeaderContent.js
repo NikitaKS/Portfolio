@@ -6,9 +6,8 @@ function HeaderContent() {
         <div className={s.headerContent}>
             <div className="container">
                 <div className={s.text}>Hello, I’m
-                    Christian
-                    Lopez
-                    Product Designer
+                    Nikita
+                    WebDeveloper
                 </div>
                 <div className={s.photo}></div>
             </div>

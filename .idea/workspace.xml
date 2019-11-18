@@ -4,10 +4,16 @@
     <list default="true" id="6b97bfe3-e416-493a-9c4b-cd84c5e4b293" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/HeaderContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/HeaderContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Social.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Social.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,6 +65,23 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -75,7 +98,11 @@
       <workItem from="1573385112563" duration="2551000" />
       <workItem from="1573389328459" duration="4015000" />
       <workItem from="1573473095280" duration="1077000" />
-      <workItem from="1573551541687" duration="7981000" />
+      <workItem from="1573551541687" duration="8617000" />
+      <workItem from="1573561056550" duration="2055000" />
+      <workItem from="1573900734465" duration="4907000" />
+      <workItem from="1574091509324" duration="13000" />
+      <workItem from="1574091527658" duration="4747000" />
     </task>
     <servers />
   </component>
