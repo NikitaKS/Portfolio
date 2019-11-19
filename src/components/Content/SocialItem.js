@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Content.module.css';
-import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 function SocialItem(props) {

@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6b97bfe3-e416-493a-9c4b-cd84c5e4b293" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Social.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Social.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/SocialItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/SocialItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +94,8 @@
       <workItem from="1573561056550" duration="2055000" />
       <workItem from="1573900734465" duration="4907000" />
       <workItem from="1574091509324" duration="13000" />
-      <workItem from="1574091527658" duration="7205000" />
+      <workItem from="1574091527658" duration="7913000" />
+      <workItem from="1574172423226" duration="464000" />
     </task>
     <servers />
   </component>
