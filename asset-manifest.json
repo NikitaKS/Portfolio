@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6951adcc.chunk.css",
+    "main.css": "/Portfolio/static/css/main.ddc98e40.chunk.css",
     "main.js": "/Portfolio/static/js/main.60c6dd80.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.60c6dd80.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.b0957d76.js",
@@ -9,17 +9,17 @@
     "static/js/2.1a8b4caa.chunk.js": "/Portfolio/static/js/2.1a8b4caa.chunk.js",
     "static/js/2.1a8b4caa.chunk.js.map": "/Portfolio/static/js/2.1a8b4caa.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.39b1384b853d2956705d2985ede70aca.js": "/Portfolio/precache-manifest.39b1384b853d2956705d2985ede70aca.js",
+    "precache-manifest.80228f897d4d4961d78f501dcc7484f7.js": "/Portfolio/precache-manifest.80228f897d4d4961d78f501dcc7484f7.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.117ce29f.chunk.css.map": "/Portfolio/static/css/2.117ce29f.chunk.css.map",
-    "static/css/main.6951adcc.chunk.css.map": "/Portfolio/static/css/main.6951adcc.chunk.css.map",
+    "static/css/main.ddc98e40.chunk.css.map": "/Portfolio/static/css/main.ddc98e40.chunk.css.map",
     "static/media/fonts.css": "/Portfolio/static/media/hkgrotesk-semibold-webfont.e9353041.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.b0957d76.js",
     "static/css/2.117ce29f.chunk.css",
     "static/js/2.1a8b4caa.chunk.js",
-    "static/css/main.6951adcc.chunk.css",
+    "static/css/main.ddc98e40.chunk.css",
     "static/js/main.60c6dd80.chunk.js"
   ]
 }
