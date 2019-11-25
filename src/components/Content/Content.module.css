@@ -1,5 +1,8 @@
 .content {
     background-color: #1f2336;
+    background-image: url("https://spaceraceit.com/wp/growth/wp-content/uploads/2019/06/Group-27.png");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .contentWrapper {
@@ -9,7 +12,7 @@
 .headerContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    height: 83vh;
 }
 
 .text {
