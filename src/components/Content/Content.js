@@ -17,7 +17,6 @@ function Content() {
     ];
     return (
         <div className={s.content}>
-            <div className="container">
                 <div className={s.contentWrapper}>
                     <HeaderContent/>
                     <AboutMe/>
@@ -25,7 +24,7 @@ function Content() {
                     <Social social={social}/>
                 </div>
             </div>
-        </div>
+
     );
 }
 
