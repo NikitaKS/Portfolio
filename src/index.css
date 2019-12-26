@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.aboutMeTabs{
+  display: grid;
+  padding: 70px 45px;
+  grid-column-gap: 30px;
+  /*grid-template-columns: repeat(auto-fit, minmax(320px,1fr));*/
+  grid-template-columns: repeat(2, calc(50% - 15px));
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .aboutMeTabs{
+    grid-template-columns:1fr
+  }
+
+}
