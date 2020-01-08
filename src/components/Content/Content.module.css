@@ -160,10 +160,13 @@
 
 .servicesWrapper {
     composes: aboutMeTabs from '../../index.css';
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-row-gap: 30px;
 }
 
+.servicesItem{
+    width: 100%;
+}
 
 .servicesIcon {
     margin-bottom: 15px;
@@ -188,10 +191,7 @@
 
 
 .ProjectsWrapper {
-    display: grid;
-    padding-bottom: 60px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 15px;
+    display: block;
 }
 
 .project {
@@ -318,6 +318,9 @@
     .AboutMeDescWrapper .right .title {
         font-size: 20px;
         margin: 20px 0;
+    }
+    .project{
+        margin-right: 0;
     }
 }
 
