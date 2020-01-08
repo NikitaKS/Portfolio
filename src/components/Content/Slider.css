@@ -1,0 +1,28 @@
+.carousel-dots {
+    text-align: left;
+}
+
+.carousel-dots li button {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.carousel-dots li button:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    content: '';
+    opacity: .2;
+    border-radius: 20px;
+    background-color: #ffc576;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.carousel-dots li.carousel-dots-active button:before {
+    opacity: 1;
+    background-color: #ffc576;
+}

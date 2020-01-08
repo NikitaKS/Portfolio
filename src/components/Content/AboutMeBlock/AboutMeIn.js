@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import s from '../Content.module.css';
 import '../../../fonts/fonts.css'
+import aboutMeImg from '../../../img/about-pic.png'
 
 class AboutMeIn extends Component {
     render() {
         return (
             <div className={s.AboutMeDescWrapper}>
                 <div className={s.left}>
-                    <img src="https://spaceraceit.com/wp/growth/wp-content/uploads/2019/05/about-pic.png"
-                         alt=""/>
+                    <img src={aboutMeImg} alt=""/>
                 </div>
                 <div className={s.right}>
                     <div className={s.title}>Why hire me for your next project?</div>

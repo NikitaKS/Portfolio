@@ -1,65 +1,6 @@
-.carouselDots {
-    display: block;
-    width: 100%;
-    margin-top: 1em;
-    padding: 0;
-    list-style: none;
-    text-align: left;
+.outlineNone {
+    outline: 1px solid transparent;
 }
-
-.carouselDots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-}
-
-.carouselDots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    background: transparent;
-}
-
-.carouselDots li button:hover,
-.carouselDots li button:focus {
-    outline: none;
-}
-
-.carouselDots li button:hover:before,
-.carouselDots li button:focus:before {
-    opacity: 1;
-}
-
-.carouselDots li button:before {
-    font-size: 40px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 3px;
-    content: '';
-    opacity: .2;
-    border-radius: 20px;
-    background-color: #ffc576;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.carouselDots li.carouselDots-active button:before {
-    opacity: .75;
-    color: black;
-}
-
 
 .content {
     background-color: #1f2336;

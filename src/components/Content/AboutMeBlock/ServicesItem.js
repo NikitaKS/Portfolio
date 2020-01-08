@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import s from '../Content.module.css';
 import '../../../fonts/fonts.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faReact,faCss3Alt,faHtml5} from '@fortawesome/free-brands-svg-icons'
-
+import {faReact,} from '@fortawesome/free-brands-svg-icons'
+// faCss3Alt,faHtml5
 class ServicesItem extends Component {
     render() {
         return (

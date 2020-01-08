@@ -24,24 +24,26 @@ class AboutMe extends Component {
                 return this.setState({isAboutMe: false, isSkills: false, isServices: true, isAward: false});
             case ('Awards'):
                 return this.setState({isAboutMe: false, isSkills: false, isServices: false, isAward: true});
+            default:
+                return this.setState({isAboutMe: true, isSkills: false, isServices: false, isAward: false});
         }
     };
 
     render() {
 
         return (
-            <div className={s.AboutMe}>
+            <div id="about me" className={s.AboutMe}>
                 <div className={"container"}>
                     <div className={s.AboutMeWrapper}>
                         <div className={s.AboutMeNav}>
                             <ul className={s.NavMenu}>
-                                <li className={this.state.isAboutMe && s.activeBtn}
+                                <li className={this.state.isAboutMe ? s.activeBtn:''}
                                     onClick={() => this.onClickButton('About Me')}>About Me
                                 </li>
-                                <li className={this.state.isSkills && s.activeBtn}
+                                <li className={this.state.isSkills ? s.activeBtn:''}
                                     onClick={() => this.onClickButton('Skills')}>Skills
                                 </li>
-                                <li className={this.state.isServices && s.activeBtn}
+                                <li className={this.state.isServices ? s.activeBtn:''}
                                     onClick={() => this.onClickButton('Services')}>Services
                                 </li>
                                 {/*<li onClick={() => this.onClickButton('Awards')}>Awards</li>*/}
