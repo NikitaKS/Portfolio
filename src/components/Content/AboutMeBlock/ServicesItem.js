@@ -11,9 +11,7 @@ class ServicesItem extends Component {
                 <div className={s.servicesIcon}>
                     <FontAwesomeIcon icon={faReact} size='3x'/>
                 </div>
-                <div className={s.servicesTitle}>
-                    Business Strategy
-                </div>
+                <div className={s.servicesTitle}>Business Strategy</div>
                 <div className={s.servicesDesc}>
                     Strategy develop customer in organisational knowledge and market perspectives that inform and
                     provoke.

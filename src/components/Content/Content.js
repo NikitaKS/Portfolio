@@ -11,9 +11,9 @@ import {faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 function Content() {
     let social = [
-        {id:0,title: 'LinedIn', desc: 'Professional social profile', icon: faLinkedinIn},
+        {id:0,title: 'LinkedIn', desc: 'Professional social profile', icon: faLinkedinIn},
         {id:1,title: 'Instagram', desc: 'Image base social communications', icon: faInstagram},
-        {id:2,title: 'Telegramm', desc: '@asdsdsd', icon: faTelegramPlane},
+        {id:2,title: 'Telegram', desc: '@asdsdsd', icon: faTelegramPlane},
     ];
     return (
         <div className={s.content}>
