@@ -4,26 +4,6 @@ import Project from "./Project";
 import Slider from 'infinite-react-carousel';
 import './Slider.css';
 
-// const state = [
-//     {
-//         title: 'Project Management Admin Panel',
-//         services: 'UI/UX, WEB, HTML, CSS',
-//         desc: 'Discover Business Strategy A thoughtful discovery process',
-//         img: 'https://spaceraceit.com/wp/growth/wp-content/uploads/2019/06/dashboard_admin.png'
-//     },
-//     {
-//         title: 'Project Management Admin Panel',
-//         services: 'UI/UX, WEB, HTML, CSS',
-//         desc: 'Discover Business Strategy A thoughtful discovery process',
-//         img: 'https://spaceraceit.com/wp/growth/wp-content/uploads/2019/06/to-do-list.png'
-//     },
-//     {
-//         title: 'Project Management Admin Panel',
-//         services: 'UI/UX, WEB, HTML, CSS',
-//         desc: 'Discover Business Strategy A thoughtful discovery process',
-//         img: 'https://spaceraceit.com/wp/growth/wp-content/uploads/2019/06/dashboard_admin.png'
-//     },
-// ];
 
 class Projects extends React.Component {
 
@@ -35,6 +15,28 @@ class Projects extends React.Component {
             arrows: false,
         },
         width: window.innerWidth,
+        projects:[
+            {
+                projectServices:'UI/UX, WEB, HTML, CSS',
+                title:'Project Management Admin',
+                text:'Discover Business Strategy A thoughtful discovery process'
+            },
+            {
+                projectServices:'UI/UX, WEB, HTML, CSS, React',
+                title:'Project Management Admin',
+                text:'Discover Business Strategy A thoughtful discovery process'
+            },
+            {
+                projectServices:'UI/UX, WEB, HTML, CSS, TS',
+                title:'Project Management Admin',
+                text:'Discover Business Strategy A thoughtful discovery process'
+            },
+            {
+                projectServices:'1',
+                title:'1',
+                text:'Discover Business Strategy A thoughtful discovery process'
+            },
+        ]
     };
     updateDimensions = () => {
         this.setState({width: window.innerWidth});
@@ -53,19 +55,21 @@ class Projects extends React.Component {
             this.state.width < 935 ? this.state.settings.slidesToShow = 1 : this.state.settings.slidesToShow = 3
         }
 
-
+        let projects = this.state.projects.map((item,index)=>{
+            return <div className={s.outlineNone}>
+                <Project title={item.title}
+                         key={index}
+                         text={item.text}
+                         projectServices={item.projectServices}/>
+            </div>
+        });
         return (
             <div>
                 <div className="container">
                     <div id='projects' className={s.Title}>Projects</div>
-                    <div className={s.ProjectsWrapper}>
+                    <div className={s.projectsWrapper}>
                         <Slider {...this.state.settings}>
-                            <div className={s.outlineNone}><Project/></div>
-                            <div className={s.outlineNone}><Project/></div>
-                            <div className={s.outlineNone}><Project/></div>
-                            <div className={s.outlineNone}><Project/></div>
-                            <div className={s.outlineNone}><Project/></div>
-                            <div className={s.outlineNone}><Project/></div>
+                            {projects}
                         </Slider>
                     </div>
                 </div>

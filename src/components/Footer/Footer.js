@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Footer.module.css';
 import HeaderLogo from "../Header/HeaderLogo";
+import {NavLink} from "react-router-dom";
 
 function Footer() {
     return (
@@ -10,7 +11,7 @@ function Footer() {
                     <HeaderLogo/>
                     {/*<div className={s.footerText}></div>*/}
                     <div className={s.FooterButton}>
-                        <a className={"MenuButtonIn"}  href="#">Let`s Chat</a>
+                        <NavLink to='/contact' className='MenuButtonIn'>Let`s Chat</NavLink>
                     </div>
                 </div>
             </div>

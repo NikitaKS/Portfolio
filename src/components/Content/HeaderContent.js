@@ -1,9 +1,10 @@
 import React from 'react';
 import s from './Content.module.css';
 
-function HeaderContent() {
+
+function HeaderContent(props) {
     return (
-        <div className={s.headerContent}>
+        <div className={s.headerContent} style={{ backgroundImage: `url(${props.background})`}}>
             <div className="container">
                 <div className={s.headerContentIn}>
                     <div className={s.text}>Hello, I’m

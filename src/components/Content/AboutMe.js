@@ -6,7 +6,7 @@ import Skills from "./AboutMeBlock/Skills";
 import Awards from "./AboutMeBlock/Awards";
 import Services from "./AboutMeBlock/Services";
 
-class AboutMe extends Component {
+class AboutMe extends React.Component {
     state = {
         isAboutMe: true,
         isSkills: false,
@@ -30,7 +30,6 @@ class AboutMe extends Component {
     };
 
     render() {
-
         return (
             <div id="about me" className={s.AboutMe}>
                 <div className={"container"}>
@@ -53,7 +52,6 @@ class AboutMe extends Component {
                         {this.state.isSkills && <Skills/>}
                         {this.state.isServices && <Services/>}
                         {this.state.isAward && <Awards/>}
-
                     </div>
                 </div>
             </div>

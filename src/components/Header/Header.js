@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Header.module.css';
 import HeaderLogo from "./HeaderLogo";
 import {Link, Events, scroller} from 'react-scroll'
+import {NavLink} from "react-router-dom";
 
 class Header extends React.Component {
     componentDidMount() {
@@ -58,13 +59,15 @@ class Header extends React.Component {
                         </div>
                         <div className={s.MenuWrapper}>
                             <ul className={menu}>
-                                <li><Link to="home" spy={true} smooth={true} duration={500}>Home</Link></li>
+                                {/*<li><Link to="home" spy={true} smooth={true} duration={500}>Home</Link></li>*/}
+                                <li><NavLink to="/">Home</NavLink></li>
                                 <li><Link to="about me" spy={true} smooth={true} duration={500}>About Me</Link></li>
                                 <li><Link to="projects" spy={true} smooth={true} duration={500}>Projects</Link></li>
                                 <li><Link to="contact" spy={true} smooth={true} duration={500}>Contact</Link></li>
                             </ul>
                             <div className={s.MenuButton}>
-                                <a className={"MenuButtonIn"} href="#">Let`s Chat</a>
+                                {/*<a className={"MenuButtonIn"} href="#">Let`s Chat</a>*/}
+                                <NavLink to="/contact" className={"MenuButtonIn"}>Let`s Chat</NavLink>
                             </div>
                         </div>
                     </div>

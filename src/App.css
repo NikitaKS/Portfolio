@@ -46,8 +46,9 @@ body {
     font-size: 14px;
     display: inline-block;
     text-decoration: none;
-    margin-left: 20px;
+    cursor: pointer;
     transition: all 0.2s;
+    outline: 1px solid transparent;
 }
 
 .MenuButtonIn:hover {

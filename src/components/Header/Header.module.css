@@ -27,7 +27,7 @@
     height: 70px;
 }
 .logoDesc{
-    font-family: 'hk_grotesbold', sans-serif;
+    font-family: 'hk_grotesklight', sans-serif;
     font-size: 20px;
     color: #f4f4f4;
     margin-left: 10px;
@@ -80,6 +80,10 @@
     opacity: 1;
     width: 100%;
 }
+.MenuWrapper .MenuButton{
+    display: block;
+    margin-left: 20px;
+}
 .buttonMenu {
     width: 30px;
     height: 19px;
@@ -127,8 +131,9 @@
         grid-template-rows: minmax(100px, auto);
         grid-template-columns: 1fr 1fr;
     }
-    .MenuButton {
+    .MenuWrapper .MenuButton{
         display: none;
+
     }
     .HeaderLogo{
         justify-content: start;

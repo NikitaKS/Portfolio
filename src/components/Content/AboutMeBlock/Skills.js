@@ -7,10 +7,10 @@ class Skills extends Component {
     state = {
         skillitem: [
             {title: 'javaScript', percent: 65,},
-            {title: 'HTML', percent: 100,},
+            {title: 'HTML', percent: 95,},
             {title: 'css', percent: 80,},
-            {title: 'react', percent: 50,},
-            {title: 'redux', percent: 30,},
+            {title: 'react', percent: 77,},
+            {title: 'redux', percent: 70,},
         ]
     };
 
