@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.71fcad33.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e3745942.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e3745942.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.a9eb6273.chunk.css",
+    "main.js": "/Portfolio/static/js/main.203fc6c4.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.203fc6c4.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.b0957d76.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.b0957d76.js.map",
     "static/css/2.66e3462b.chunk.css": "/Portfolio/static/css/2.66e3462b.chunk.css",
-    "static/js/2.21a6ff8d.chunk.js": "/Portfolio/static/js/2.21a6ff8d.chunk.js",
-    "static/js/2.21a6ff8d.chunk.js.map": "/Portfolio/static/js/2.21a6ff8d.chunk.js.map",
+    "static/js/2.0fbbfab4.chunk.js": "/Portfolio/static/js/2.0fbbfab4.chunk.js",
+    "static/js/2.0fbbfab4.chunk.js.map": "/Portfolio/static/js/2.0fbbfab4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.a46d9e106f1a7e7d3cde1610c6b4e713.js": "/Portfolio/precache-manifest.a46d9e106f1a7e7d3cde1610c6b4e713.js",
+    "precache-manifest.d0fb8d474f78f379ea4e2604e34ea864.js": "/Portfolio/precache-manifest.d0fb8d474f78f379ea4e2604e34ea864.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.66e3462b.chunk.css.map": "/Portfolio/static/css/2.66e3462b.chunk.css.map",
-    "static/css/main.71fcad33.chunk.css.map": "/Portfolio/static/css/main.71fcad33.chunk.css.map",
+    "static/css/main.a9eb6273.chunk.css.map": "/Portfolio/static/css/main.a9eb6273.chunk.css.map",
     "static/media/HeaderBack.png": "/Portfolio/static/media/HeaderBack.17521b06.png",
     "static/media/about-pic.png": "/Portfolio/static/media/about-pic.59a1bc80.png",
     "static/media/contactFormBack.jpg": "/Portfolio/static/media/contactFormBack.eb7ce3eb.jpg",
+    "static/media/counter.jpg": "/Portfolio/static/media/counter.2513d0fd.jpg",
     "static/media/fonts.css": "/Portfolio/static/media/hkgrotesk-semibold-webfont.e9353041.woff",
-    "static/media/projectDef.png": "/Portfolio/static/media/projectDef.007be451.png"
+    "static/media/portfolio.jpg": "/Portfolio/static/media/portfolio.024709d2.jpg",
+    "static/media/todolist.jpg": "/Portfolio/static/media/todolist.c2810c6e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b0957d76.js",
     "static/css/2.66e3462b.chunk.css",
-    "static/js/2.21a6ff8d.chunk.js",
-    "static/css/main.71fcad33.chunk.css",
-    "static/js/main.e3745942.chunk.js"
+    "static/js/2.0fbbfab4.chunk.js",
+    "static/css/main.a9eb6273.chunk.css",
+    "static/js/main.203fc6c4.chunk.js"
   ]
 }
