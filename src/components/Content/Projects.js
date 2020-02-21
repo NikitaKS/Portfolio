@@ -3,6 +3,9 @@ import s from './Content.module.css';
 import Project from "./Project";
 import Slider from 'infinite-react-carousel';
 import './Slider.css';
+import todolist from '../../img/todolist.jpg'
+import portfolio from '../../img/portfolio.jpg'
+import counter from '../../img/counter.jpg'
 
 
 class Projects extends React.Component {
@@ -13,29 +16,39 @@ class Projects extends React.Component {
             dots: true,
             duration: 100,
             arrows: false,
+            gutter: 50
         },
         width: window.innerWidth,
-        projects:[
+        projects: [
             {
-                projectServices:'UI/UX, WEB, HTML, CSS',
-                title:'Project Management Admin',
-                text:'Discover Business Strategy A thoughtful discovery process'
+                projectServices: 'UI/UX, React.js, Redux, Redux Form',
+                title: 'My Portfolio',
+                text: 'Web site, where you can find my works',
+                img: portfolio,
+                link: 'https://nikitaks.github.io/Portfolio'
             },
             {
-                projectServices:'UI/UX, WEB, HTML, CSS, React',
-                title:'Project Management Admin',
-                text:'Discover Business Strategy A thoughtful discovery process'
+                projectServices: 'UI/UX, React.js, Redux, CSS/html, API, TS',
+                title: 'To do list',
+                text: 'A list of main and other tasks',
+                img: todolist,
+                link: 'https://nikitaks.github.io/todoListProd'
             },
             {
-                projectServices:'UI/UX, WEB, HTML, CSS, TS',
-                title:'Project Management Admin',
-                text:'Discover Business Strategy A thoughtful discovery process'
+                projectServices: 'UI/UX, React, Redux',
+                title: 'Simple Counter',
+                text: 'Simple counter with settings',
+                img: counter,
+                link: 'https://nikitaks.github.io/Counter/'
             },
             {
-                projectServices:'1',
-                title:'1',
-                text:'Discover Business Strategy A thoughtful discovery process'
+                projectServices: 'UI/UX, React.js, Redux, CSS/html, API, TS',
+                title: 'To do list',
+                text: 'A list of main and other tasks',
+                img: todolist,
+                link: 'https://nikitaks.github.io/todoListProd'
             },
+
         ]
     };
     updateDimensions = () => {
@@ -51,15 +64,14 @@ class Projects extends React.Component {
     }
 
     render() {
-        {
-            this.state.width < 935 ? this.state.settings.slidesToShow = 1 : this.state.settings.slidesToShow = 3
-        }
-
-        let projects = this.state.projects.map((item,index)=>{
-            return <div className={s.outlineNone}>
+        // eslint-disable-next-line react/no-direct-mutation-state
+        this.state.width < 935 ? this.state.settings.slidesToShow = 1 : this.state.settings.slidesToShow = 3;
+        let projects = this.state.projects.map((item, index) => {
+            return <div className={s.outlineNone} key={index}>
                 <Project title={item.title}
-                         key={index}
                          text={item.text}
+                         img={item.img}
+                         link={item.link}
                          projectServices={item.projectServices}/>
             </div>
         });

@@ -14,23 +14,14 @@ class AboutMeIn extends Component {
                     <div className={s.title}>Why hire me for your next project?</div>
                     <div className={s.desc}>
                         <p>
-                            Meet my startup design agency Shape Rex Currently I am working at CodeNext as
-                            Product
-                            Designer. Before that I’ve worked at SpurBee, Dhaka as a UX, UI Designer.
+                            I'm a <span>multi-talented</span> human. Most of my time I design and build digital products.
+                            I create <span>responsive websites</span> that allow the user to experience your website in the
+                            best and most appropriate way suited to the device they are using.
                         </p>
 
                         <p>
-                            I love to work in User Experience & User Interface designing. Because I love to
-                            solve
-                            the
-                            design problem and find easy and better solutions to solve it. I always try my
-                            best
-                            to
-                            make
-                            good user interface with the best user experience. I have been working as a
-                            Visual
-                            designer
-                            from.
+                            I can quickly and efficiently <span>join your team</span> using continuous-integration
+                            with methods and tools such as Git.
                         </p>
                     </div>
                 </div>

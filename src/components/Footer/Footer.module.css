@@ -4,13 +4,14 @@
 
 .footerWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
 }
 .footerText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
+    font-family: hk_grotesklight,sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
 }
 .FooterButton{
     display: flex;
@@ -30,8 +31,11 @@
     text-decoration: none;
 }
 @media(min-width: 0px) and (max-width: 767px){
+    .footer .footerWrapper .HeaderLogo{
+        display: none;
+    }
     .footerWrapper{
-        grid-template-rows: minmax(100px,auto);
+        grid-template-rows: minmax(40px,auto);
         grid-template-columns: 1fr;
     }
     .FooterButton{

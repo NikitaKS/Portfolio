@@ -5,6 +5,11 @@ import {Link, Events, scroller} from 'react-scroll'
 import {NavLink} from "react-router-dom";
 
 class Header extends React.Component {
+
+    state = {
+        mobileMenu: false
+    };
+
     componentDidMount() {
         Events.scrollEvent.register('begin', function () {
             console.log("begin", arguments);
@@ -24,14 +29,26 @@ class Header extends React.Component {
         })
     }
 
-    componentWillUnmount() {
-        Events.scrollEvent.remove('begin');
-        Events.scrollEvent.remove('end');
+    componentWillMount() {
+        document.addEventListener('click', this.onClickOuterModal, false);
     }
 
-    state = {
-        mobileMenu: false
+
+    onClickOuterModal = (event) => {
+        const modal = document.getElementById('home');
+        if (modal && !modal.contains(event.target)) {
+            this.setState({
+                mobileMenu: false
+            });
+        }
     };
+
+    // componentWillUnmount() {
+    //     Events.scrollEvent.remove('begin');
+    //     Events.scrollEvent.remove('end');
+    //     document.removeEventListener('click', this.onClickOuterModal, false);
+    // }
+
     showMenu = () => {
         if (!this.state.mobileMenu) {
             this.setState({
@@ -59,19 +76,31 @@ class Header extends React.Component {
                         </div>
                         <div className={s.MenuWrapper}>
                             <ul className={menu}>
-                                {/*<li><Link to="home" spy={true} smooth={true} duration={500}>Home</Link></li>*/}
-                                <li><NavLink to="/">Home</NavLink></li>
-                                <li><Link to="about me" spy={true} smooth={true} duration={500}>About Me</Link></li>
-                                <li><Link to="projects" spy={true} smooth={true} duration={500}>Projects</Link></li>
-                                <li><Link to="contact" spy={true} smooth={true} duration={500}>Contact</Link></li>
+                                <li>
+                                    <NavLink onClick={this.showMenu} to="/">Home</NavLink>
+                                </li>
+                                <li>
+                                    <Link onClick={this.showMenu} to="about me"
+                                          spy={true} smooth={true} duration={500}>About Me</Link>
+                                </li>
+                                <li>
+                                    <Link onClick={this.showMenu} to="projects" spy={true} smooth={true}
+                                          duration={500}>Projects</Link>
+                                </li>
+                                <li>
+                                    <Link onClick={this.showMenu} to="contact" spy={true} smooth={true}
+                                          duration={500}>Contact</Link>
+                                </li>
                             </ul>
                             <div className={s.MenuButton}>
-                                {/*<a className={"MenuButtonIn"} href="#">Let`s Chat</a>*/}
                                 <NavLink to="/contact" className={"MenuButtonIn"}>Let`s Chat</NavLink>
                             </div>
                         </div>
                     </div>
                 </div>
+                {/*{*/}
+                {/*    this.state.mobileMenu &&<div className={s.overlay}></div>*/}
+                {/*}*/}
             </div>
         );
     }

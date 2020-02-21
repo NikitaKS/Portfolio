@@ -1,13 +1,11 @@
 .header {
-    background-color: #1f2336;
-    /*position: absolute;*/
+    /*background-color: #1f2336;*/
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-}
-
-.menu {
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 
 .headerWrapper {
@@ -15,8 +13,20 @@
     grid-template-rows: 1fr;
     grid-template-columns: 4fr 8fr;
     align-items: center;
+    z-index: 3;
+    position: relative;
 }
-
+.overlay{
+    position: fixed; /* Sit on top of the page content */
+    /*display: none; !* Hidden by default *!*/
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    /*z-index: 1; !* Specify a stack order in case you're using a different order for other elements *!*/
+    cursor: pointer; /* Add a pointer on hover */
+}
 .HeaderLogo {
     display: flex;
     align-items: center;
@@ -26,26 +36,25 @@
 .logo_img {
     height: 70px;
 }
-.logoDesc{
+
+.logoDesc {
     font-family: 'hk_grotesklight', sans-serif;
     font-size: 20px;
     color: #f4f4f4;
     margin-left: 10px;
 }
+
 .MenuWrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 2;
 }
+
 .MenuWrapper .Menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.MenuWrapper .Menu li {
-    padding: 15px 0;
-    position: relative;
 }
 
 .MenuWrapper .Menu li + li {
@@ -61,29 +70,40 @@
     cursor: pointer;
     transition: all 0.2s;
     text-decoration: none;
-}
-.MenuWrapper .Menu a:hover{
-    color: #FFC576;
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
 }
 
-.MenuWrapper .Menu a:before {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    border-bottom: 2px solid #FFC576;
-    transition: 0.3s;
+@media not all and (pointer: coarse) {
+    .MenuWrapper .Menu a:hover {
+        color: #FFC576;
+    }
+
+    .MenuWrapper .Menu a:before {
+        content: '';
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        border-bottom: 2px solid #FFC576;
+        transition: 0.3s;
+    }
+
+    .MenuWrapper .Menu a:hover:before {
+        opacity: 1;
+        width: 100%;
+    }
 }
-.MenuWrapper .Menu a:hover:before{
-    opacity: 1;
-    width: 100%;
-}
-.MenuWrapper .MenuButton{
+
+
+.MenuWrapper .MenuButton {
     display: block;
     margin-left: 20px;
 }
+
 .buttonMenu {
     width: 30px;
     height: 19px;
@@ -93,6 +113,7 @@
     cursor: pointer;
     transition: transform 200ms ease-out;
 }
+
 .buttonMenu.open {
     transform: rotate(-45deg);
 }
@@ -126,40 +147,59 @@
 .open .lineMenu.end {
     transform: rotate(-90deg) translateX(-6px);
 }
-@media(min-width: 0px) and (max-width: 767px){
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .header {
+        background-color: #1f2336;
+        position: static;
+        /*-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);*/
+        /*-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);*/
+        /*box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);*/
+    }
+
     .headerWrapper {
         grid-template-rows: minmax(100px, auto);
         grid-template-columns: 1fr 1fr;
     }
-    .MenuWrapper .MenuButton{
+
+    .MenuWrapper .MenuButton {
         display: none;
 
     }
-    .HeaderLogo{
+
+    .HeaderLogo {
         justify-content: start;
     }
-    .logoDesc{
+
+    .logoDesc {
         display: none;
     }
-    .MenuWrapper{
-        justify-content: center;
+
+    .MenuWrapper {
+        justify-content: flex-start;
         grid-column: 1/-1;
     }
-    .MenuWrapper .Menu{
+
+    .MenuWrapper .Menu {
         height: 0px;
         overflow: hidden;
         transition: 0.3s;
         flex-direction: column;
     }
-    .buttonMenu{
-     display: flex;
+
+    .buttonMenu {
+        display: flex;
         justify-self: end;
     }
     .Menu.menuActive {
-        display: flex!important;
-        height: 240px;
+        height: 200px;
+        width: 100%;
+    }
+    .Menu li{
+        width: 100%;
     }
     .MenuWrapper .Menu li + li {
         margin-left: 0px;
+        border-top: 1px solid rgba(46, 56, 65, 0.9);
     }
 }

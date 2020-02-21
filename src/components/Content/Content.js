@@ -15,19 +15,19 @@ import contactImg from '../../img/contactFormBack.jpg';
 
 function Content() {
     let social = [
-        {id: 0, title: 'LinkedIn', desc: 'Professional social profile', icon: faLinkedinIn},
-        {id: 1, title: 'Instagram', desc: 'Image base social communications', icon: faInstagram},
-        {id: 2, title: 'Telegram', desc: '@asdsdsd', icon: faTelegramPlane},
+        {id: 0, title: 'LinkedIn', desc: 'Professional social profile', icon: faLinkedinIn, link:'https://www.linkedin.com/in/nikita-kysil-89991b1a1/'},
+        {id: 1, title: 'Instagram', desc: 'Image base social communications', icon: faInstagram,link:'https:/www.instagram.com'},
+        {id: 2, title: 'Telegram', desc: '@', icon: faTelegramPlane,link:'https://web.telegram.org/#/login'},
     ];
     return (
         <div className={s.content}>
             <div className={s.contentWrapper}>
                 <Route path='/contact'>
-                    <HeaderContent background={contactImg}/>
+                    <HeaderContent height={'80vh'} overlay={true} background={contactImg}/>
                     <ContactForm/>
                 </Route>
                 <Route exact path='/' >
-                    <HeaderContent background={headerImg}/>
+                    <HeaderContent height={'100vh'} overlay={false} background={headerImg}/>
                     <AboutMe/>
                     <Projects/>
                 </Route>

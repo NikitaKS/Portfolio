@@ -4,7 +4,7 @@ import SocialItem from "./SocialItem";
 
 function Social(props) {
     let socialitem = props.social.map(item => {
-        return <SocialItem key={item.id} title={item.title} desc={item.desc} icon={item.icon}/>
+        return <SocialItem link={item.link} key={item.id} title={item.title} desc={item.desc} icon={item.icon}/>
     });
     return (
         <div id='contact'>

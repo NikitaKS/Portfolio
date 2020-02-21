@@ -1,36 +1,37 @@
 import React from 'react';
 import s from './ReduxForm.module.css';
-// let FormControls = ({input, meta, ...restProps}) => {
-//
-// };
 
-export const Input = ({input, meta, ...restProps}) => {
+let FormControls = ({input, meta, ...props}) => {
     let error = meta.touched && meta.error;
     return (
         <div className={s.fieldWrapper}>
-            <input className={`${error ? s.requiredField : ''}`} {...input} {...restProps}/>
+            {props.children}
             {
-                meta.touched &&
+                error &&
                 <div className={s.textError}>
                     <span>{meta.error}</span>
                 </div>
             }
         </div>
+    )
 
+};
+
+export const Input = (props) => {
+    const {input, meta, ...restProps} = props;
+    let error = meta.touched && meta.error;
+    return (
+        <FormControls {...props}>
+            <input className={`${error ? s.requiredField : ''}`} {...input} {...restProps}/>
+        </FormControls>
     )
 };
-export const TextArea = ({input, meta, ...restProps}) => {
+export const TextArea = (props) => {
+    const {input, meta, ...restProps} = props;
     let error = meta.touched && meta.error;
     return (
-        <div className={s.fieldWrapper}>
+        <FormControls {...props}>
             <textarea className={`${error ? s.requiredField : ''}`} {...input} {...restProps}/>
-            {
-                meta.touched &&
-                <div className={s.textError}>
-                    <span>{meta.error}</span>
-                </div>
-            }
-        </div>
-
+        </FormControls>
     )
 };

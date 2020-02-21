@@ -8,25 +8,52 @@
 
 
 .headerContent {
-    height: calc(100vh - 100px);
-    min-height: 80vh;
+    position: relative;
+    /*height: calc(100vh - 100px);*/
+    /*min-height: 80vh;*/
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: auto;
+    /*background-attachment:fixed;*/
 }
 
 .headerContent .headerContentIn {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
-}
-
-.text {
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: #f4f4f4;
+    height: 100%;
+    z-index: 1;
 }
 
+.headerContent .backOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1f2235;
+    opacity: 0.85;
+
+}
+
+.headerContent .headerContentIn .text {
+    color: #f4f4f4;
+    text-align: center;
+    font-family: 'hk_grotesklight', sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 500;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.headerContent .headerContentIn .text span {
+    color: #ffc576;
+    font-family: 'hk_grotesksemibold', sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+}
 
 .AboutMe {
     padding-bottom: 60px;
@@ -101,8 +128,12 @@
     display: block;
 }
 
+.AboutMeDescWrapper .right .desc span {
+    color: #FFC576;
+}
+
 .AboutMeDescWrapper .right .desc p {
-    font-family: 'hk_groteskregular', sans-serif;
+    font-family: 'hk_groteskmedium', sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
@@ -122,6 +153,7 @@
 }
 
 .skillsTop {
+    font-family: "hk_groteskmedium", sans-serif;
     line-height: 26px;
     display: flex;
     align-items: flex-start;
@@ -131,7 +163,6 @@
 }
 
 .skillTitle {
-    /*font-family: "Open Sans", Sans-serif;*/
     font-size: 12px;
     font-weight: 500;
     display: block;
@@ -157,9 +188,16 @@
 }
 
 .skillProgressBarIn {
-    width: 80%;
     height: 5px;
     background-color: #ffc576;
+    animation: progressBar 1.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+    }
 }
 
 .servicesWrapper {
@@ -179,15 +217,15 @@
 .servicesTitle {
     font-size: 20px;
     line-height: 28px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
+    font-family: 'hk_groteskbold', sans-serif;
+    margin: 0 0 15px 0;
     padding: 0;
     transition-duration: .3s;
     color: #fff;
 }
 
 .servicesDesc {
-    font-family: 'hk_groteskregular', sans-serif;
+    font-family: 'hk_grotesklight', sans-serif;
     font-size: 16px;
     line-height: 24px;
     margin: 0;
@@ -208,9 +246,12 @@
     background-color: #313552;
 }
 
+.project a {
+    text-decoration: none;
+}
+
 .projectImg {
     overflow: hidden;
-
     max-height: 330px;
     transition: .5s;
     border-radius: 8px;
@@ -229,7 +270,7 @@
 
 
 .projectDetails {
-    padding: 40px 30px 40px 30px;
+    padding: 30px 20px 30px 20px;
     color: white;
 }
 
@@ -239,20 +280,23 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+    word-spacing: 2px
 }
 
 .projectTitle {
     font-size: 24px;
     line-height: 32px;
     font-family: 'hk_groteskmedium', sans-serif;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 15px 0;
 }
 
 .projectDesc {
     font-size: 16px;
     line-height: 24px;
-    font-family: 'hk_groteskmedium', sans-serif;
-    /*margin: 0px 0px 50px 0px;*/
+    font-family: 'hk_grotesklight', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .SocialWrapper {
@@ -262,15 +306,20 @@
     grid-gap: 15px;
 }
 
+.SocialWrapper a {
+    text-decoration: none;
+}
+
 .Title {
-    font-family: 'hk_groteskregular', sans-serif;
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-family: 'hk_groteskbold', sans-serif;
+    font-size: 34px;
+    margin-bottom: 30px;
     color: #f4f4f4;
 }
 
 .SocialItemWrapper {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 30px 30px 30px 30px;
@@ -282,6 +331,7 @@
     border-radius: 7px 7px 7px 7px;
     background-color: #2c304a;
 }
+
 
 .SocialItemIcon {
     transition: all .2s;
@@ -328,49 +378,39 @@
     background-color: #313552;
     padding: 40px;
     color: #fff;
+    margin-bottom: 30px;
 }
 
 .contactFormWrapper .contentFormIn .contactFormTitle {
+    font-family: hk_grotesksemibold, sans-serif;
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .contactFormWrapper .contentFormIn .contactFormDesc {
+    font-family: 'hk_grotesklight', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
 }
-
-.contactFormWrapper .contentFormIn .inputFormWrapper {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 15px;
-    margin: 30px 0 20px 0;
-}
-/*.contactFormWrapper .contentFormIn .inputFormWrapper input,*/
-/*.contactFormWrapper .contentFormIn .inputFormWrapper textarea {*/
-/*    outline: 1px solid transparent;*/
-/*    padding: 18px;*/
-/*    background-color: transparent;*/
-/*    border: 1px solid #fff;*/
-/*    border-radius: 3px;*/
-/*    color: #79879d;*/
-/*    font-size: 16px;*/
-/*    resize: none;*/
-/*}*/
-
-/*.contactFormWrapper .contentFormIn .inputFormWrapper input::placeholder,*/
-/*.contactFormWrapper .contentFormIn .inputFormWrapper textarea::placeholder {*/
-/*    color: #79879d;*/
-/*}*/
-
-/*.contactFormWrapper .contentFormIn .inputFormWrapper textarea {*/
-/*    grid-area: 1/2/4/2;*/
-/*}*/
 
 
 @media (min-width: 0) and (max-width: 767px) {
+    .headerContent {
+        height: 50vh !important;
+    }
+
+    .headerContent .headerContentIn .text {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 0;
+    }
+
+    .headerContent .headerContentIn .text span {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
     .NavMenu li {
         padding: 15px 10px;
     }
@@ -386,12 +426,23 @@
     }
 
     .project {
-        margin-right: 0;
+        margin: 0 10px;
     }
+
     .contactFormWrapper .contentFormIn .inputFormWrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-row-gap: 10px;
+    }
+
+    .contactFormWrapper .contentFormIn {
+        padding: 20px;
+    }
+
+    .contactFormWrapper .contentFormIn .contactFormTitle {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 15px;
     }
 }
 
