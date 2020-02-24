@@ -16,17 +16,19 @@
     z-index: 3;
     position: relative;
 }
-.overlay{
+
+.overlay {
     position: fixed; /* Sit on top of the page content */
     /*display: none; !* Hidden by default *!*/
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
     /*z-index: 1; !* Specify a stack order in case you're using a different order for other elements *!*/
     cursor: pointer; /* Add a pointer on hover */
 }
+
 .HeaderLogo {
     display: flex;
     align-items: center;
@@ -56,7 +58,9 @@
     flex-direction: row;
     align-items: center;
 }
-
+.MenuWrapper .Menu li{
+    position: relative;
+}
 .MenuWrapper .Menu li + li {
     margin-left: 20px;
 }
@@ -70,10 +74,7 @@
     cursor: pointer;
     transition: all 0.2s;
     text-decoration: none;
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
-    height: 100%;
+
 }
 
 @media not all and (pointer: coarse) {
@@ -86,7 +87,7 @@
         position: absolute;
         opacity: 0;
         left: 0;
-        bottom: 0;
+        top: 100%;
         width: 0;
         border-bottom: 2px solid #FFC576;
         transition: 0.3s;
@@ -170,7 +171,6 @@
 
     .MenuWrapper .MenuButton {
         display: none;
-
     }
 
     .HeaderLogo {
@@ -197,15 +197,27 @@
         display: flex;
         justify-self: end;
     }
+
     .Menu.menuActive {
-        height: 200px;
+        height: 210px;
         width: 100%;
     }
-    .Menu li{
+
+    .Menu li {
         width: 100%;
     }
-    .MenuWrapper .Menu li + li {
+
+    .MenuWrapper .Menu a {
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+        height: 100%;
+    }
+    .MenuWrapper .Menu li + li{
+        margin: 0;
+    }
+    .MenuWrapper .Menu li {
         margin-left: 0px;
-        border-top: 1px solid rgba(46, 56, 65, 0.9);
+        border-bottom: 1px solid rgba(46, 56, 65, 0.9);
     }
 }

@@ -7,7 +7,16 @@ import {NavLink} from "react-router-dom";
 class Header extends React.Component {
 
     state = {
-        mobileMenu: false
+        mobileMenu: false,
+        width: window.innerWidth
+    };
+    updateDimensions = () => {
+        this.setState({width: window.innerWidth});
+        if (this.state.width > 767) {
+            this.setState({
+                mobileMenu: false
+            })
+        }
     };
 
     componentDidMount() {
@@ -18,7 +27,12 @@ class Header extends React.Component {
         Events.scrollEvent.register('end', function () {
             console.log("end", arguments);
         });
+        window.addEventListener('resize', this.updateDimensions);
+    }
 
+    componentWillMount() {
+        document.addEventListener('click', this.onClickOuterModal, false);
+        window.removeEventListener('resize', this.updateDimensions);
     }
 
     scrollTo() {
@@ -28,11 +42,6 @@ class Header extends React.Component {
             smooth: 'easeInOutQuart'
         })
     }
-
-    componentWillMount() {
-        document.addEventListener('click', this.onClickOuterModal, false);
-    }
-
 
     onClickOuterModal = (event) => {
         const modal = document.getElementById(`headerWrapper`);
@@ -61,7 +70,7 @@ class Header extends React.Component {
         return (
             <div id='home' className={s.header}>
                 {
-                    this.state.mobileMenu && <div className={s.overlay}></div>
+                    this.state.mobileMenu && this.state.width <= 767 && <div className={s.overlay}></div>
                 }
                 <div className="container">
                     <div id='headerWrapper' className={s.headerWrapper}>

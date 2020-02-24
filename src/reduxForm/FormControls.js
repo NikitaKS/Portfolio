@@ -14,7 +14,6 @@ let FormControls = ({input, meta, ...props}) => {
             }
         </div>
     )
-
 };
 
 export const Input = (props) => {
