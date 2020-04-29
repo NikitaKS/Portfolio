@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c32bb4251143d07e641843f0f70f8f3e",
+    "revision": "a3884b28b630ceb4ec17da9a1d03df80",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "4741ac1031439a502e87",
-    "url": "/Portfolio/static/css/2.66e3462b.chunk.css"
+    "revision": "be44342e8e87a950f13a",
+    "url": "/Portfolio/static/css/2.e8939ea6.chunk.css"
   },
   {
-    "revision": "70e106f2eebb96568334",
-    "url": "/Portfolio/static/css/main.a1175aaa.chunk.css"
+    "revision": "a3525baaa73075203e05",
+    "url": "/Portfolio/static/css/main.1d0885a0.chunk.css"
   },
   {
-    "revision": "4741ac1031439a502e87",
-    "url": "/Portfolio/static/js/2.d17cdaab.chunk.js"
+    "revision": "be44342e8e87a950f13a",
+    "url": "/Portfolio/static/js/2.4ae3fb10.chunk.js"
   },
   {
-    "revision": "70e106f2eebb96568334",
-    "url": "/Portfolio/static/js/main.fa9b8f45.chunk.js"
+    "revision": "a3525baaa73075203e05",
+    "url": "/Portfolio/static/js/main.102f1eaf.chunk.js"
   },
   {
-    "revision": "63fe68486ecb758e5a56",
-    "url": "/Portfolio/static/js/runtime-main.b0957d76.js"
+    "revision": "7f25df1073963c6a6820",
+    "url": "/Portfolio/static/js/runtime-main.e51dc731.js"
   },
   {
     "revision": "17521b060568e8e468a2b4866daf8c76",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "eb7ce3ebc5070773c16c0c8edce928b1",
     "url": "/Portfolio/static/media/contactFormBack.eb7ce3eb.jpg"
-  },
-  {
-    "revision": "2513d0fd32801beb239899b15fcf5dd9",
-    "url": "/Portfolio/static/media/counter.2513d0fd.jpg"
   },
   {
     "revision": "073736d35d7a45c4dfdc7f590594b41f",
@@ -88,11 +84,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/hkgrotesk-semibold-webfont.e9353041.woff"
   },
   {
-    "revision": "024709d279ae7bae5552912e9a801754",
-    "url": "/Portfolio/static/media/portfolio.024709d2.jpg"
+    "revision": "a190ffc6dafa96477c09d6412fc5425c",
+    "url": "/Portfolio/static/media/pechorin.a190ffc6.png"
   },
   {
-    "revision": "c2810c6ede797f19e7ce675403a55a71",
-    "url": "/Portfolio/static/media/todolist.c2810c6e.jpg"
+    "revision": "83690c4213b94afd0c5ce96638c2cbed",
+    "url": "/Portfolio/static/media/portfolio.83690c42.png"
+  },
+  {
+    "revision": "e996884e90eadc900fc4402e64caa0e7",
+    "url": "/Portfolio/static/media/rms.e996884e.png"
+  },
+  {
+    "revision": "e281223fcb11667d31f51faf12a95177",
+    "url": "/Portfolio/static/media/todolist.e281223f.png"
   }
 ]);
