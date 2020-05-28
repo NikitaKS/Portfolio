@@ -252,7 +252,7 @@
 
 .projectImg {
     overflow: hidden;
-    max-height: 330px;
+    max-height: 280px;
     transition: .5s;
     border-radius: 8px;
 }

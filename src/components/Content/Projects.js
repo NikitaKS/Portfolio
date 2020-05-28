@@ -3,9 +3,10 @@ import s from './Content.module.css';
 import Project from "./Project";
 import Slider from 'infinite-react-carousel';
 import './Slider.css';
-import todolist from '../../img/todolist.jpg'
-import portfolio from '../../img/portfolio.jpg'
-import counter from '../../img/counter.jpg'
+import todolist from '../../img/todolist.png'
+import portfolio from '../../img/portfolio.png'
+import rms from '../../img/rms.png'
+import pechorin from '../../img/pechorin.png'
 
 
 class Projects extends React.Component {
@@ -16,7 +17,8 @@ class Projects extends React.Component {
             dots: true,
             duration: 100,
             arrows: false,
-            gutter: 50
+            gutter: 50,
+            autoplay: true,
         },
         width: window.innerWidth,
         projects: [
@@ -35,18 +37,18 @@ class Projects extends React.Component {
                 link: 'https://nikitaks.github.io/todoListProd'
             },
             {
-                projectServices: 'UI/UX, React, Redux',
-                title: 'Simple Counter',
-                text: 'Simple counter with settings',
-                img: counter,
-                link: 'https://nikitaks.github.io/Counter/'
+                projectServices: 'React, Redux',
+                title: 'RMS',
+                text: 'Register page',
+                img: rms,
+                link: 'https://rms-med.ru/'
             },
             {
-                projectServices: 'UI/UX, React.js, Redux, CSS/html, API, TS',
-                title: 'To do list',
-                text: 'A list of main and other tasks',
-                img: todolist,
-                link: 'https://nikitaks.github.io/todoListProd'
+                projectServices: 'React.js, Redux, CSS/html, API, TS',
+                title: 'Pechorin',
+                text: 'Food Shop',
+                img: pechorin,
+                link: 'https://pechorin.by/'
             },
 
         ]
@@ -85,7 +87,6 @@ class Projects extends React.Component {
                         </Slider>
                     </div>
                 </div>
-
             </div>
         );
     }
